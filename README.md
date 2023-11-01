@@ -1,5 +1,9 @@
 # LambdavoyageFrontend
 
 :)
-![WhatsApp Image 2023-11-01 at 10 00 27_51d7fd4b](https://github.com/steepsalvadorman/LambdaVoyageFront/assets/86312325/6dd5fb3f-24b3-4f92-bec6-0913fb576d30)
-![WhatsApp Image 2023-11-01 at 10 06 18_b6eb84bf](https://github.com/steepsalvadorman/LambdaVoyageFront/assets/86312325/a6da8c67-09b9-42f3-8942-a71f840768d3)
+![image](https://github.com/steepsalvadorman/LambdaVoyageFront/assets/86312325/1713f60a-a34f-4842-9730-e6533b02109b)
+![image](https://github.com/steepsalvadorman/LambdaVoyageFront/assets/86312325/59208eaa-76f9-4e70-bcce-dadf81736e64)
+![image](https://github.com/steepsalvadorman/LambdaVoyageFront/assets/86312325/65543f30-34ff-4987-b3f6-50a8a7a59264)
+
+
+
