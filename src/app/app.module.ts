@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: 'offers', component: OffersComponentComponent },
   { path: 'seats', component: SeatsComponentComponent },
   { path: 'destinations', component: DestinationsComponentComponent },
-  { path: '', component: HomeComponentComponent }
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 
