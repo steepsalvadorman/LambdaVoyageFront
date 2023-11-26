@@ -10,7 +10,7 @@ import { AboutComponentComponent } from './about-component/about-component.compo
 import { OffersComponentComponent } from './offers-component/offers-component.component';
 import { SeatsComponentComponent } from './seats-component/seats-component.component';
 import { DestinationsComponentComponent } from './destinations-component/destinations-component.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponentComponent },
@@ -37,7 +37,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
