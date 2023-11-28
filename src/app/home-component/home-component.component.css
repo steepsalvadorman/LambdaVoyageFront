@@ -1,5 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 /* You can add global styles to this file, and also import other style files */
+
+/*Aqui viene*/
+.input__group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input__group input:not(:placeholder-shown) + label,
+.input__group input:focus + label {
+  top: -1.5rem;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.input__group input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.input__group label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  background-color: white;
+  padding: 0 0.25rem;
+}
+/*Aqui viene*/
+
+
 :root {
   --primary-color: #3d5cb8;
   --primary-color-dark: #334c99;

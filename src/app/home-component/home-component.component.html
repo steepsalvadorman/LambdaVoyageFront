@@ -13,12 +13,12 @@
     <span>Business Class</span>
     <span>First Class</span>
   </div>
-  <form>
+  <form id="myForm" (ngSubmit)="onFormSubmit()">
     <div class="form__group">
       <span><i class="ri-map-pin-line"></i></span>
       <div class="input__content">
         <div class="input__group">
-          <input type="text" />
+          <input type="text" [(ngModel)]="location" name="location" />
           <label>Location</label>
         </div>
         <p>Where are you going?</p>
@@ -28,7 +28,7 @@
       <span><i class="ri-user-3-line"></i></span>
       <div class="input__content">
         <div class="input__group">
-          <input type="number" />
+          <input type="number" [(ngModel)]="travellers" name="travellers"/>
           <label>Travellers</label>
         </div>
         <p>Add guests</p>
@@ -38,7 +38,7 @@
       <span><i class="ri-calendar-line"></i></span>
       <div class="input__content">
         <div class="input__group">
-          <input type="text" />
+          <input type="date" [(ngModel)]="departureDate" name="departureDate"/>
           <label>Departure</label>
         </div>
         <p>Add date</p>
@@ -48,13 +48,13 @@
       <span><i class="ri-calendar-line"></i></span>
       <div class="input__content">
         <div class="input__group">
-          <input type="text" />
+          <input type="date" [(ngModel)]="returnDate" name="returnDate"/>
           <label>Return</label>
         </div>
         <p>Add date</p>
       </div>
     </div>
-    <button class="btn"><i class="ri-search-line"></i></button>
+    <button type="submit" class="btn"><i class="ri-search-line"></i></button>
   </form>
 </section>
 

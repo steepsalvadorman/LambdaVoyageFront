@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
@@ -10,6 +9,8 @@ import { AboutComponentComponent } from './about-component/about-component.compo
 import { OffersComponentComponent } from './offers-component/offers-component.component';
 import { SeatsComponentComponent } from './seats-component/seats-component.component';
 import { DestinationsComponentComponent } from './destinations-component/destinations-component.component';
+import { BusquedaComponentComponent } from './busqueda-component/busqueda-component.component';
+import { CommonModule } from '@angular/common';
 
 
 const appRoutes: Routes = [
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
   { path: 'offers', component: OffersComponentComponent },
   { path: 'seats', component: SeatsComponentComponent },
   { path: 'destinations', component: DestinationsComponentComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: 'busqueda', component: BusquedaComponentComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 
@@ -37,8 +39,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    CommonModule
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
